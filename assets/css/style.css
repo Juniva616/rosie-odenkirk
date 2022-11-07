@@ -206,7 +206,7 @@ footer {
     background: #2b72b5;
 }
 
-.social-links  .pintrest:hover {
+.social-links .pintrest:hover {
     background: #c7480a;
 }
 
@@ -217,11 +217,13 @@ footer {
 .social-links .youtube:hover {
     background: #c7480a;
 }
+
 #footer-details {
     padding: 20px;
 }
 
 /* ------------------------------------ Three reasons  */
+
 .three-reasons-icon {
     font-size: 26px;
     color: #5d09ac;
@@ -232,6 +234,7 @@ footer {
 }
 
 /* ------------------------------------ Personal Info  */
+
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
@@ -246,7 +249,7 @@ footer {
 
 .personal-info-item .key p,
 .personal-info-item .value p {
-     margin: 0;
+    margin: 0;
 }
 
 .personal-info-item .key {
@@ -263,4 +266,22 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+    
+/* ------------------------------------ Skills  */
+
+.progress {
+        position: relative;
+        height: 25px;
+        margin-bottom: 4px;
+        line-height: 2em;
+    }
+
+.progress-type {
+    position: absolute;
+    left: 0;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
 }
