@@ -64,7 +64,7 @@ h5 {
     padding: 0 30px 30px;
     float: none;
 }
-
+.history-heading,
 .section-heading {
     font-family: Exo, sans-serif;
     font-weight: 300;
@@ -285,3 +285,55 @@ footer {
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
 }
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+.progress-space {
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------- Work History  */
+
+.history-heading {
+    color: #2b72b5;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0 2em;
+    position: relative;
+    color: #2b72b5;
+    border-left: 1px solid;   
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 2.5em;  
+    font-family: Exo, sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 2.4em;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background-color: #2b72b5;
+} 
