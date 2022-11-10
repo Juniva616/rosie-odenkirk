@@ -65,9 +65,11 @@ h5 {
 
 .section-column {
     display: table-cell;
-    padding: 0 30px 30px;
+    padding: 1px 30px 30px;
     float: none;
+    border: 1px solid white;
 }
+
 .contact-heading,
 .history-heading,
 .section-heading {
@@ -100,7 +102,7 @@ header {
 
 .name {
     font-family: Exo, sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 46px;
     margin-top: 50px;
     color: #fff;
@@ -248,7 +250,7 @@ footer {
 
 .personal-info-item .key,
 .personal-info-item .value {
-    padding-right: 8px;
+    padding-right: 5px;
     display: inline-block;
 }
 
@@ -258,29 +260,42 @@ footer {
 }
 
 .personal-info-item .key {
-    width: 30%;
-    margin-right: 21px;
+    width: 25%;
+    margin-right: 18px;
     padding-top: 2px;
     vertical-align: top;
 }
 
 .personal-info-item .key p {
-    font-weight: 700;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
 }
 
 .personal-info-item .value {
-    position: relative;
-    width: 60%;
+ /*   position: relative; */
+    width: 65%;
+    vertical-align: top;
 }
-    
+
+.personal-info-item .value p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
 /* ------------------------------------ Skills  */
 
+.skills-icon {
+    font-size: 26px;
+    color: #2b72b5;
+}
+
 .progress {
-        position: relative;
-        height: 25px;
-        margin-bottom: 4px;
-        line-height: 2em;
-    }
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+    line-height: 2em;
+}
 
 .progress-type {
     position: absolute;
@@ -301,16 +316,19 @@ footer {
 
 /*---------------------------------------- Work History  */
 
+.workplace {
+    font-weight: 400;
+}
+
 .history-heading {
-    color: #2b72b5;
     margin-bottom: 20px;
 }
 
 .timeline-item {
     padding: 4em 2em 0 2em;
     position: relative;
-    color: #2b72b5;
-    border-left: 1px solid;   
+    color: #01080f;
+    border-left: 1px solid #2b72b5;
 }
 
 .timeline-item p {
@@ -323,7 +341,7 @@ footer {
     display: block;
     position: absolute;
     top: 3em;
-    left: 2.5em;  
+    left: 2.5em;
     font-family: Exo, sans-serif;
     font-weight: 500;
     font-size: 0.8em;
@@ -341,8 +359,15 @@ footer {
     border-radius: 12px;
     content: '';
     background-color: #2b72b5;
-} 
+}
+
 /* ------------------------------------Contact Form */
+
+.contact-icon {
+    font-size: 26px;
+    color: #127704;
+    padding-left: 40px;
+}
 
 .center-form {
     padding-top: 10px;
@@ -354,7 +379,7 @@ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     color: #fafafa;
-    background-color: #e84610;
+    background-color: #127704;
 }
 
 /* ------------------------------------ Media Query */
@@ -367,4 +392,3 @@ button[type="submit"] {
         max-width: 50%;
     }
 }
-    
