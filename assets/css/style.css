@@ -285,7 +285,7 @@ footer {
 }
 
 .personal-info-item .value {
- /*   position: relative; */
+    /*   position: relative; */
     width: 65%;
     vertical-align: top;
 }
@@ -393,19 +393,15 @@ button[type="submit"] {
     color: #fafafa;
     background-color: #127704;
 }
+
 /* ------------------------------------ Github page */
 
 .github-icon {
-     font-size: 26px;
+    font-size: 32px;
     color: #313030;
     padding-left: 40px;
 }
 
-.about-github>p { 
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-}
 /* ------------------------------------ Media Query */
 
 @media(min-width: 992px) {
@@ -417,4 +413,6 @@ button[type="submit"] {
     }
 }
 
-div#map {min-height: 360px;}
+div#map {
+    min-height: 360px;
+}
