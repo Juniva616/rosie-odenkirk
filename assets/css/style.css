@@ -35,7 +35,7 @@
 }
 
 .ui-menu-color-github {
-    background-color: #01080f;
+    background-color: #27415a;
 }
 
 .ui-menu-color-download {
@@ -83,7 +83,8 @@ h5 {
 
 .contact-heading,
 .history-heading,
-.section-heading {
+.section-heading,
+.github-heading {
     font-family: Exo, sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -392,7 +393,19 @@ button[type="submit"] {
     color: #fafafa;
     background-color: #127704;
 }
+/* ------------------------------------ Github page */
 
+.github-icon {
+     font-size: 26px;
+    color: #313030;
+    padding-left: 40px;
+}
+
+.about-github>p { 
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
 /* ------------------------------------ Media Query */
 
 @media(min-width: 992px) {
