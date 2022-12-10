@@ -31,22 +31,28 @@
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer row">
                             <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
-                                <a href="index.html" class="hvr-grow-shadow"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-grow-shadow"><i class="fa fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
-                                <a href="resume.html" class="hvr-grow-shadow"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                <a href="resume.html" class="hvr-grow-shadow"><i class="fa fa-graduation-cap"
+                                        aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-contact menuitem">
-                                <a href="contact.html" class="hvr-grow-shadow"><i class=" fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="contact.html" class="hvr-grow-shadow"><i class=" fa fa-commenting-o"
+                                        aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
-                                <a href="interests.html" class="hvr-grow-shadow"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                                <a href="interests.html" class="hvr-grow-shadow"><i class="fa fa-users"
+                                        aria-hidden="true"></i><span>Interests</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
-                                <a href="github.html" class="hvr-grow-shadow"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                                <a href="github.html" class="hvr-grow-shadow"><i class="fa fa-github"
+                                        aria-hidden="true"></i><span>GitHub</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
-                                <a href="assets/css/cv/sample-cv.pdf" target="_blank" class="hvr-grow-shadow"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
+                                <a href="assets/css/cv/sample-cv.pdf" target="_blank" class="hvr-grow-shadow"><i
+                                        class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
                             </li>
                         </ul>
                     </div>
@@ -217,6 +223,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("zwfSUS30PsDtqbEdz");
+        })();
+        emailjs.send('service_6i4uwma', 'template_54esh3p', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    </script>
 </body>
 
 </html>
